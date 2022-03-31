@@ -2,11 +2,11 @@ package creationals.builder;
 
 public class Card {
 
-    final private String cardType;
-    final private String name;
-    final private String number;
-    final private int expire;
-    final private boolean isCredit;
+    private final String cardType;
+    private final String name;
+    private final String number;
+    private final int expire;
+    private final boolean isCredit;
 
     private Card(CardBuilder cardBuilder) {
         this.cardType = cardBuilder.cardType;
