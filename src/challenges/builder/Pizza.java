@@ -6,13 +6,13 @@ public class Pizza {
     private final String name; // required
     private final String sauce; // optional
     private final String cheese; // optional
-    private final String baser; // optional
+    private final String base; // optional
     
     private Pizza(PizzaBuilder pizzaBuilder) {
         this.name = pizzaBuilder.name;
         this.sauce = pizzaBuilder.sauce;
         this.cheese = pizzaBuilder.cheese;
-        this.baser = pizzaBuilder.baser;
+        this.base = pizzaBuilder.base;
     }
 
     public String getName() {
@@ -27,13 +27,13 @@ public class Pizza {
         return cheese;
     }
 
-    public String getBaser() {
-        return baser;
+    public String getBase() {
+        return base;
     }
 
     @Override
     public String toString() {
-        return "Pizza [baser=" + baser + ", cheese=" + cheese + ", name=" + name + ", sauce=" + sauce + "]";
+        return "Pizza [name=" + name + ", base=" + base + ", cheese=" + cheese + ", sauce=" + sauce + "]";
     }
 
     public static class PizzaBuilder {
@@ -41,7 +41,7 @@ public class Pizza {
         private final String name;
         private String sauce;
         private String cheese;
-        private String baser;
+        private String base;
 
         public PizzaBuilder(String name) {
             this.name = name;
@@ -57,8 +57,8 @@ public class Pizza {
             return this;
         }
 
-        public PizzaBuilder baser(String baser) {
-            this.baser = baser;
+        public PizzaBuilder base(String base) {
+            this.base = base;
             return this;
         }
 
