@@ -22,7 +22,7 @@ public class RunBuilder {
 
         Pizza pza3 = new Pizza.PizzaBuilder("Familiar")
         // no sauce
-        // cheese
+        // no cheese
         .base("Harina comun")
         .build();
 

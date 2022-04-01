@@ -62,7 +62,7 @@ public class Pizza {
             return this;
         }
 
-        //Return the finally consrcuted User object
+        // Return the finally consrcuted Pizza object
         public Pizza build() {
             return new Pizza(this);
         }
